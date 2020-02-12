@@ -5,7 +5,7 @@
 x = 12
 
 
-def change_x():
+def change_x():  # pulling in variable x from global scope and changing the value to 99 in function scope
     global x
     x = 99
 
@@ -22,7 +22,7 @@ def outer():
     y = 120
 
     def inner():
-        nonlocal y
+        nonlocal y  # pulling in variable y from parent function scope to change value of y in child scope
         y = 999
 
     inner()

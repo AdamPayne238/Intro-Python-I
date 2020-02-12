@@ -58,4 +58,6 @@ elif (y.isdigit()) and (m.isdigit()):
     ym = calendar.month(y, m)
     print(ym)
 
-
+else:
+    print("This Calendar only accepts numbers as inputs!!!! TRY AGAIN!")
+    sys.exit()

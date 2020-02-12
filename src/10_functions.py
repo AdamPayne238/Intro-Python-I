@@ -8,7 +8,7 @@ def is_even(a):
         return False
 
 
-print(is_even(2))
+print(is_even(1))  # if number is even => true else: false
 
 # Read a number from the keyboard
 num = input("Enter a number: ")

@@ -15,7 +15,7 @@ has the following keys:
  - name: a name string for this location
 """
 
-waypoints = [
+waypoints = [  # list of dictionaries
     {
         "lat": 43,
         "lon": -121,
@@ -45,12 +45,12 @@ print(waypoints)
 
 # YOUR CODE HERE
 for a in waypoints:
-    if 'a place' in a.values():
-        a['lon'] = -130
+    if 'a place' in a.values():  # values() is a method that returns a list of all values available in given dictionary
+        a['lon'] = -130          # select key and alter its value
         a['name'] = 'not a real place'
 
 print(waypoints)
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
 for a in waypoints:
-    print("All Waypoint Values", a.values())
+    print(a.values())
